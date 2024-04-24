@@ -35,3 +35,20 @@ Step 2: Docker Basics
 **Container:** A Docker container resembles a portable package containing all the essentials for an application to run smoothly. It comprises the application along with necessary tools and configurations. These containers operate independently on your device, with each container's data kept separate from others'.
 
 **Dockerfile:** A text file housing all the instructions necessary to construct a Docker image.
+
+Part 2: Creating Docker Images
+--
+Step 3: Create Dockerfile for frontend
+-
+Create a Dockerfile for the frontend application (assuming it’s built with React). Here’s an example:
+
+![image](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/733da117-efb8-4d53-a1f7-69e2805cdd1e)
+
+Step 4: Backend Dockerfile
+-
+Create a similar Dockerfile for the backend application.
+
+![image](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/550b0f99-bb2e-44e4-baa9-731c9ef0f307)
+
+Step 5: Building the images
+-
