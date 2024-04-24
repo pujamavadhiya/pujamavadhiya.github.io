@@ -44,7 +44,7 @@ Create a Dockerfile for the frontend application (assuming it’s built with Rea
 
 ![image](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/733da117-efb8-4d53-a1f7-69e2805cdd1e)
 
-Step 4: Backend Dockerfile
+Step 4: Create Dockerfile for Backend 
 -
 Create a similar Dockerfile for the backend application.
 
@@ -98,8 +98,11 @@ Step 8: Open in Browser
 Open http://localhost:3000 to see the Reacjs App and http://localhost:5000/students to see the API response from the express server.
 ![image](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/625f2b04-a24c-4455-99e8-c8e72a1747dc)
 ![WhatsApp Image 2024-04-25 at 00 32 33_c9e6fdb4](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/c6dd3e2c-0c63-4a16-bd25-90e49d5154c4)
+
 To Check if the Application is running or not we can check that the data is comming to mysql or not by running the query in mysql container
+
 ![WhatsApp Image 2024-04-25 at 00 28 08_4084113b](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/e8b6aa8a-ebbf-42d6-ba55-62f809772a27)
+
 ```
 select * from students;
 ```
