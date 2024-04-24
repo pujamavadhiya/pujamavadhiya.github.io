@@ -52,3 +52,38 @@ Create a similar Dockerfile for the backend application.
 
 Step 5: Building the images
 -
+You can now build both images using the following commands
+
+Building the Frontend Image:
+
+![WhatsApp Image 2024-04-24 at 11 39 56_4f436f19](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/4561f7b9-34e7-4736-8b7d-605404f82631)
+
+Building the Backend Image:
+
+![WhatsApp Image 2024-04-24 at 11 40 10_c4920476](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/149c0dcc-a10a-448c-9e5d-4d0cf64cad13)
+
+Step 6: Run MySQL docker container
+-
+```docker run -d --name puja_mysql_db --network Docker_Assignment -p 3307:3306 -e MYSQL_ROOT_PASSWORD=<password> mysql:8.0```
+Creating a database and tables inside the mysql container
+```docker exec -it puja_mysql_db mysql -u root -p```
+
+Then you will be asked for password which is your_password. After that enter the following SQL queries in order to create a new Database.
+
+![WhatsApp Image 2024-04-24 at 11 54 19_928b7f43](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/ea7cd6e6-7dcf-42f2-97ad-1021244b2407)
+![WhatsApp Image 2024-04-24 at 11 46 55_b7362528](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/d27d6b9d-7f3e-4641-bf02-1f9c64ee4467)
+![WhatsApp Image 2024-04-24 at 11 56 23_3e12a57e](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/ef0048e8-d4c2-47b9-943a-95707e7b524a)
+
+Part 3: Running the application
+--
+step 7: Building the containers
+-
+To build all three containers use this command:
+
+1. Frontend React app:
+   ```docker run -d --name puja_frontend --network Docker_Assignment -p 3000:3000 frontend_image_21BCP446D```
+2. Backend NodeJS Express server :
+   ```docker run -d --name puja_backend --network Docker_Assignment -p 5000:5000 backend_image_21BCP446D```
+3. MySQL Server:
+   ```docker run -d --name puja_mysql_db --network Docker_Asignment -p 3307:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql:8.0```
+![WhatsApp Image 2024-04-24 at 11 51 48_81fab397](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/f61827e5-dedf-49fc-93f6-a8feb11cab36)
