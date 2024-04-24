@@ -81,9 +81,26 @@ step 7: Building the containers
 To build all three containers use this command:
 
 1. Frontend React app:
-   ```docker run -d --name puja_frontend --network Docker_Assignment -p 3000:3000 frontend_image_21BCP446D```
-2. Backend NodeJS Express server :
-   ```docker run -d --name puja_backend --network Docker_Assignment -p 5000:5000 backend_image_21BCP446D```
-3. MySQL Server:
-   ```docker run -d --name puja_mysql_db --network Docker_Asignment -p 3307:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql:8.0```
+   ```
+   docker run -d --name puja_frontend --network Docker_Assignment -p 3000:3000 frontend_image_21BCP446D
+   ```
+3. Backend NodeJS Express server :
+   ```
+   docker run -d --name puja_backend --network Docker_Assignment -p 5000:5000 backend_image_21BCP446D
+   ```
+5. MySQL Server:
+   ```
+   docker run -d --name puja_mysql_db --network Docker_Asignment -p 3307:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql:8.0
+   ```
 ![WhatsApp Image 2024-04-24 at 11 51 48_81fab397](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/f61827e5-dedf-49fc-93f6-a8feb11cab36)
+Step 8: Open in Browser
+-
+Open http://localhost:3000 to see the Reacjs App and http://localhost:5000/students to see the API response from the express server.
+![image](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/625f2b04-a24c-4455-99e8-c8e72a1747dc)
+![WhatsApp Image 2024-04-25 at 00 32 33_c9e6fdb4](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/c6dd3e2c-0c63-4a16-bd25-90e49d5154c4)
+To Check if the Application is running or not we can check that the data is comming to mysql or not by running the query in mysql container
+![WhatsApp Image 2024-04-25 at 00 28 08_4084113b](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/e8b6aa8a-ebbf-42d6-ba55-62f809772a27)
+```
+select * from students;
+```
+![WhatsApp Image 2024-04-25 at 00 35 00_5afe96fd](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/95cb8795-ef7f-4f3b-b983-d4fdc9ef9ba1)
