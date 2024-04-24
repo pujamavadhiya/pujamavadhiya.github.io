@@ -64,9 +64,14 @@ Building the Backend Image:
 
 Step 6: Run MySQL docker container
 -
-```docker run -d --name puja_mysql_db --network Docker_Assignment -p 3307:3306 -e MYSQL_ROOT_PASSWORD=<password> mysql:8.0```
+```
+docker run -d --name puja_mysql_db --network Docker_Assignment -p 3307:3306 -e MYSQL_ROOT_PASSWORD=<password> mysql:8.0
+```
+
 Creating a database and tables inside the mysql container
-```docker exec -it puja_mysql_db mysql -u root -p```
+```
+docker exec -it puja_mysql_db mysql -u root -p
+```
 
 Then you will be asked for password which is your_password. After that enter the following SQL queries in order to create a new Database.
 
