@@ -5,8 +5,13 @@ title: Setting Up the Multi-Container Application with Docker
 ---
 Introduction
 ---
+Docker is a widely-used open-source platform designed to streamline the deployment process of applications within lightweight and portable containers. These containers encompass an application along with all its prerequisites, such as libraries, frameworks, and other essential elements, creating a unified package. This encapsulation ensures consistent and dependable performance of the application across various environments, irrespective of the underlying infrastructure.
 
+A notable advantage of Docker is its capability to resolve the common "works on my machine" challenge frequently encountered by software development teams. By bundling applications into containers, developers can ensure consistent behavior across development, testing, and production environments. This uniformity simplifies the development workflow and minimizes the occurrence of deployment-related issues.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+--
+Prerequisites
+--
+Before we begin, ensure you have the following prerequisites:
+  Docker installed on your machine so for that download docker desktop
+  
