@@ -13,5 +13,8 @@ A notable advantage of Docker is its capability to resolve the common "works on 
 Prerequisites
 --
 Before we begin, ensure you have the following prerequisites:
-  Docker installed on your machine so for that download docker desktop
+  Install docker on your machine so for that download docker desktop
+  ![image](https://github.com/pujamavadhiya/pujamavadhiya.github.io/assets/122553122/b9fd9e60-3623-42c0-bda0-5485ac816014)
+  Basic understanding of Docker concepts
+  Knowledge of your application’s frontend and backend technologies through docker documents:
   
